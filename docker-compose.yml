@@ -2,7 +2,7 @@ version: "3"
 
 services:
     bot:
-        image: asakuram/mirai
+        build: .
         restart: unless-stopped
         volumes:
             - ./device.json:/app/device.json
